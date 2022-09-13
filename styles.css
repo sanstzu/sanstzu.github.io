@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 body{
-    background: linear-gradient(-45deg, #fba6cc, #ffffff);
+    background: linear-gradient(-45deg, #ffdbea, #ffffff);
 }
 
 .hidden{
@@ -33,6 +33,7 @@ div.intro:hover{
     font-size:20px;
     text-align: left;
     font-family: 'Raleway', sans-serif;
+    /*transition-duration: 0.4s;*/
 }
 /*
 header{
