@@ -1,4 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body{
+    background: linear-gradient(-45deg, #fba6cc, #ffffff);
+}
+
+.hidden{
+    visibility: hidden;
+}
+div.intro{
+    background: #aaaaaa30;
+    border-radius: 10px 10px 10px 10px;
+    padding: 10px;
+    width: 50%;
+    margin: 5% 5% 5% 5%;
+    /*transition-duration: 0.4s;*/
+}
+
+div.intro:hover{
+    width:60%;
+    transition-duration: 0.4s;
+}
+
+.title{
+    display:flex;
+    font-size: 30px;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+}
+
+.paragraph{
+    display: flex;
+    font-size:20px;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+}
+/*
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #cccccc1f;
+    border-radius: 20px;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+body{
+    background: linear-gradient(-45deg, #f7e1eb, #ffffff);
+}
+
+div{
+    box-sizing: border-box;
+    margin-top: 50px;
+    padding-top: 10px;
+    background: #cccccc1f;
+    border-radius: 10px 10px 0px 0px;
+    height: 1500px;
+}
+
+nav.nav{
+    display: inline-flex;
+    position: relative;
+    overflow: hidden;
+    padding: 0 20px;
+    align-items: right;
+    max-width: 100%;
+    border-radius: 6px;
+}
+
+.left-title{
+    font-family: 'Raleway';
+    font-weight: 400;
+}
+
+.nav_bar{
+    font-style: inherit;
+    text-decoration: inherit;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    font-family: "Raleway", sans-serif;
+    padding: 20px 50px 20px 50px;
+    
+    border: ;
+    transition-duration: 0.4s;
+}
+
+.nav_bar:visited{
+    font: inherit;
+    font-style: inherit;
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.nav_bar:hover{
+    font-style: inherit;
+    text-decoration: inherit;
+    font-family: "Raleway", sans-serif;
+    padding: 20px 50px 20px 50px;
+    border: violet;
+    color: #bbbbbb;
+    border-bottom-width: 200px;
+    
+}
+
 div.up {
     color:#FBA6CC;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+*/

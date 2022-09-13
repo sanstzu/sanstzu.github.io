@@ -2,9 +2,25 @@
   <head>
     <link rel="stylesheet" href="styles.css">
   </head>
-  <body>
-    <div class="up">
-      <h1>This site is under construction</h1>
-    </div>
+  <body onload="init()">
+    <!---
+    <header>
+    <span style="width: 50%"><h1 class="left-title">Sanstzu</h1></span>
+    <span style="width: 50%">
+    <nav class="nav">
+      <a href="https://google.com" class="nav_bar" active-color="#00FF00">Home</a>
+      <a class="nav_bar">About</a>
+      <a class="nav_bar">Projects</a>
+      <a class="nav_bar">Gaming</a>
+    </nav>
+    </span>
+    </header>
+  -->
+  
+  <div class="intro" id="intro" onmouseenter="show('desc1',0)" onmouseleave="show('desc1',0)">
+    <h1 class="title" style="color:black">Sanstzu's Crib</h1>
+    <p class="paragraph hidden" id="desc1"></p>
+  </div>
   </body>
+  <script src="script.js"></script>
 </html>
