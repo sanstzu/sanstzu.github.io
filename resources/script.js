@@ -1,3 +1,4 @@
+/*
 var messages = ["Under construction"];
 var curtext = [""];
 var state = [false]
@@ -53,3 +54,4 @@ async function show(id_name,id){
     }
     
 }
+*/
