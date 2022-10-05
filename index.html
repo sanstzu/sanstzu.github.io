@@ -21,8 +21,8 @@
     <script>
       AOS.init();
     </script>
-    <div class="container-fluid">
-
+    <script src="resources/script.js"></script>
+    <div class="container-fluid" id="nav_bar">
       <div class="row" id="intro-0">
         <div class="col-md12 col-sm-12" data-aos="fade" data-aos-duration="2000">
           Sanstzu's Crib
@@ -30,11 +30,15 @@
       </div>
 
       <div class="row" id="intro-1">
-        <div class="col-md12 col-sm-12" id="under-text" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="1000">
-          a.k.a. Clayton Fernalo
+        <div class="col-md12 col-sm-12" id="text-aliases" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="1000">
+          <div class="alias-paragraph">a.k.a. 
+            <span class="typing" id="alias" style="margin: 0px;"></span>
+            <span class="typing" id="cursor">&nbsp</span>
+          </div>
         </div>
       </div>
-      
+    </div>
+    <div class="container-fluid">
       <div class="row" id="divider">
         <div class="col-md12 col-sm-12" style="border-bottom: 100px black; box-sizing: content-box;">
         </div>

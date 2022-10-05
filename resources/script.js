@@ -1,3 +1,60 @@
+const aliases = ["Clayton Fernalo", "sanstzu", "sans", "one and only", "unysolo"]
+const ani_time = 250;
+const duration = 5000;
+const typing_id = "alias";
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+
+
+async function show(id_name,id){
+    var element = document.getElementById(id_name);
+    await sleep(200);
+    //console.log("1");
+    //await sleep(1000);
+    //console.log("test");
+    text = aliases[id].toLowerCase();
+    //console.log("el.len = ".concat(String(element.innerHTML.length)))
+    element.innerHTML = "";
+    for(let i = 0; i < text.length; i++){
+        console.log(aliases[id][i]);
+        element.innerHTML += aliases[id][i];
+        console.log(element.innerHTML);
+        await sleep(ani_time/text.length);
+    }
+    //console.log("--");
+}
+
+
+async function hide(id_name){
+    var element = document.getElementById(id_name);
+    //console.log(element.innerHTML);
+    //console.log(element.innerHTML.length);
+    await sleep(1);
+    //console.log("2");
+    //console.log("el.len = ".concat(String(element.innerHTML.length)))
+    var len =  element.innerHTML.length;
+    var text = element.innerHTML;
+    for(let i = 0; i < len; i++){
+        //console.log(i);
+        element.innerHTML = element.innerHTML.slice(0,-1);
+        await sleep(ani_time/len);
+    }
+}
+
+document.addEventListener("DOMContentLoaded", async function() {
+    //console.log("0");
+    var cur = 0;
+    while(1){
+        //console.log("1");
+        show(typing_id,cur);
+        await sleep(duration);
+        hide(typing_id);
+        cur = (cur+1)%aliases.length;
+        await sleep(ani_time+200);
+    }
+})
 /*
 var messages = ["Under construction"];
 var curtext = [""];

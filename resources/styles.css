@@ -10,7 +10,15 @@
     font-size: 1em;
 }
 
+div#nav_bar{
+    background-color: rgb(241, 255, 255);
+}
 
+#text-aliases{
+    position: relative;
+    left: 3px;
+    font-size: 1.5em;
+}
 
 html {
     height: 100%;
@@ -43,6 +51,31 @@ div#intro-1{
     margin-bottom: 10px;
 }
 
+#cursor {
+    display: inline-block;
+    width: 1.5px;
+    background-color: #000000;
+    margin-left: 0px;
+    animation: cursor-effect 1s infinite;
+}
+
+@keyframes cursor-effect {
+    0% {
+        background-color: #000000;
+    }
+    49% {
+        background-color: #000000;
+    }
+    50% {
+        background-color: #00000000;
+    }
+    50% {
+        background-color: #00000000;
+    }
+    100% {
+        background: #00000000;
+    }
+}
 
 /*
 .col-md-1, .col-ld-1 {width: 8.33%;}
