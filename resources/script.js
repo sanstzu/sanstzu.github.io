@@ -6,8 +6,38 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+document.addEventListener("DOMContentLoaded", async function() {
+    var cur = 0;
+    var rise = 1;
+    var cur_idx = 0;
+    var cur_len = aliases[cur].length;
+    var element = document.getElementById(typing_id);
+    while(1){
+        if(rise == 1){
+            element.innerHTML += aliases[cur][cur_idx];
+            if(cur_idx == cur_len - 1){
+                rise = 0;
+                await sleep(duration);
+            } else {
+                cur_idx++;
+            }
+        } else {
+            element.innerHTML = element.innerHTML.slice(0,-1);
+            if(cur_idx < 1){
+                rise = 1;
+                cur = (cur + 1)%aliases.length;
+                cur_len = aliases[cur].length;
+                
+            } else {
+                cur_idx--;
+            }
+        }
+        await sleep(ani_time/cur_len);
+    }
+})
 
-
+/*
+Old typing effect script
 async function show(id_name,id){
     var element = document.getElementById(id_name);
     await sleep(200);
@@ -55,6 +85,7 @@ document.addEventListener("DOMContentLoaded", async function() {
         await sleep(ani_time+200);
     }
 })
+*/
 /*
 var messages = ["Under construction"];
 var curtext = [""];
