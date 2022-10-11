@@ -1,12 +1,16 @@
 const aliases = ["Clayton Fernalo", "sanstzu", "sans", "one and only", "unysolo"]
 const ani_time = 250;
 const duration = 5000;
+const offset_time = 2000;
 const typing_id = "alias";
+
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+
 document.addEventListener("DOMContentLoaded", async function() {
+    sleep(offset_time);
     var cur = 0;
     var rise = 1;
     var cur_idx = 0;

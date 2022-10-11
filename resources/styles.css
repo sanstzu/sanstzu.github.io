@@ -17,7 +17,10 @@ div#nav_bar{
 #text-aliases{
     position: relative;
     left: 3px;
-    font-size: 1.5em;
+    bottom: 10px;
+    font-weight: bold;
+    margin-top:0;
+    font-size: 0.5em;
 }
 
 html {
@@ -32,11 +35,7 @@ div#intro-0:nth-child(1){
 }
 
 div#intro-1{
-    position: relative;
-    bottom: 10px;
-    font-weight: bold;
-    margin-top:0;
-    font-size: 0.5em;
+    
 }
 
 .text{
